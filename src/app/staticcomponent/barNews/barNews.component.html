@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-header">
+      Top News
+    </div>
+    <ul >
+      <li *ngFor="let new of topNews">
+          <a class="nav-link" [routerLink]="['/news-details',new.ID]"
+            routerLinkActive="router-link-active">{{new.Name}} <span class="sr-only">(current)</span></a>
+        </li> 
+         <!-- featuredNews -->
+    </ul>
+  </div>

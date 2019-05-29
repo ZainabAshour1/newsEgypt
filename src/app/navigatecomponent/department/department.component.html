@@ -1,0 +1,9 @@
+<div id="news" *ngFor="let new of newsArray" class="card" style="width:80%">
+    <a class="nav-link" [routerLink]="['/news-details',new.ID]" routerLinkActive="router-link-active">
+        <h4 id="newName">{{new.Name}}</h4>
+    </a>{{new.Date| date}}
+
+    <a class="nav-link" [routerLink]="['/news-details',new.ID]" routerLinkActive="router-link-active">
+        <img src={{new.Image}} alt="Avatar" style="width:115%">
+    </a>
+</div>

@@ -1,0 +1,10 @@
+
+
+<div id="ne" class="card mb-3" style="width:80%">
+    <img class="card-img-top" src="{{news.Image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{news.Name}}</h5>
+      <p class="card-text" innerHtml="{{news.Desc}}"></p>
+      <p class="card-text"><small class="text-muted">{{news.Date |date}}</small></p>
+      <button class="btn-primary" (click)="back();">Back </button> 
+    </div>

@@ -1,0 +1,10 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li *ngFor="let depts of departments" class="nav-item active">
+        <a *ngIf="depts.ShowInMainMenu==true" class="nav-link" [routerLink]="['/department',depts.ID]"
+          routerLinkActive="router-link-active">{{depts.Name}} <span class="sr-only">(current)</span></a>
+      </li> 
+    </ul>
+  </div>
+</nav>

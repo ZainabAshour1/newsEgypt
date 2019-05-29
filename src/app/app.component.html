@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+
+
+
+<div id="header">
+    <header></header>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+                <app-News [topNews]="fetNewsRetrieved"></app-News>
+            <!-- <features-news></features-news> -->
+        </div>
+
+        <div class="col-sm-6">
+            <router-outlet></router-outlet>
+        </div>
+
+        <div class="col-sm-3">
+                <app-News [topNews]="topNewsRetrieved"></app-News>
+            <!-- <top-news></top-news> -->
+        </div>
+
+    </div>
+</div>
+
+<footer></footer>
